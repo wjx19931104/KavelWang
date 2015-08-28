@@ -1,0 +1,109 @@
+div,h2,a{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    -webkit-user-select: none;
+}
+#star{
+    margin: 20px 0;
+    width: 100%;
+    height: 370px;
+}
+#star #starTop{
+   margin: 0 auto;
+    width: 1240px;
+    height: 48px;
+    position: relative;
+}
+#star #starTop h2{
+    font-size: 20px;
+    float: left;
+    font-weight: normal;
+}
+#star #starTop a{
+    float: right;
+    display: inline-block;
+    height: 24px;
+    width: 38px;
+    line-height: 24px;
+    color:#e0e1e4;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "iconfont" !important;
+    border: 1px solid #e0e1e4;
+    text-decoration: none;
+    position: relative;
+    top:15px;
+}
+#star #starTop a.border{
+    border-left: none;
+}
+#star #starTop a.c{
+    color: #b0b0b0;
+}
+#star #starTop a.c:hover{
+    color: orangered;
+}
+#starBottom{
+    clear: both;
+    margin: 0 auto;
+    width: 1240px;
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+}
+#starBottom #starOuter{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 2480px;
+    height: 288px;
+}
+#starBottom #starOuter div{
+    float: left;
+    width: 247px;
+    height: 288px;
+    line-height: 288px;
+    text-align: center;
+    border-bottom: 1px #e0e1e4 solid;
+    border-top: 1px #e0e1e4 solid;
+    position: relative;
+}
+#starBottom #starOuter div.borderLeft{
+    width: 246px;
+    border-left: 1px #e0e1e4 solid;
+}
+#starBottom #starOuter div.borderRight{
+    border-right: 1px #e0e1e4 solid;
+}
+#starBottom #starOuter div img{
+    margin-top: 30px;
+}
+#starBottom #starOuter .borderRight:hover{
+    box-shadow: inset 0 0 30px  #e0e1e4;
+}
+#starBottom #starOuter div a{
+    display: block;
+    position: absolute;
+    bottom: 45px;
+    height: 20px;
+    width: 247px;
+    color: #3c3c3c;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    word-spacing:5px;
+}
+#starBottom #starOuter .borderRight span{
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    height: 20px;
+    width: 247px;
+    line-height: 20px;
+    text-align: center;
+    color: #b6b6c9;
+    word-spacing:5px;
+}

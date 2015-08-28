@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+    <style type="text/css">
+        body, div, input, span {
+            margin: 0;
+            padding: 0;
+            font: 14px "微软雅黑";
+        }
+
+        #box {
+            margin: 50px auto 0;
+            padding: 20px;
+            width: 300px;
+            height: 200px;
+            border: 1px dashed #22b909;
+            border-radius: 10px;
+        }
+
+        #box #inEmail {
+            padding-left: 10px;
+            width: 260px;
+            height: 30px;
+            border: 1px solid #ddd;
+            color: #ccc;
+        }
+
+        #box #inEmail.cus {
+            color: #000;
+        }
+
+        #box #spEmail {
+            display: block;
+            margin-top: 5px;
+            padding-left: 10px;
+            height: 35px;
+            line-height: 35px;
+            border-radius: 5px;
+            background: #FFF38F;
+            color: #3c3c3c;
+        }
+
+        #box #spEmail.ok {
+            background: #96E555;
+            color: #0000BB;
+        }
+
+        #box #spEmail.error {
+            background: #FFE0E9;
+            color: red;
+        }
+
+        #box #btnEmail {
+            margin: 50px auto 0;
+            width: 200px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <input type="text" id="inEmail" value="请输入您的邮箱" tip="请输入您的邮箱"/>
+    <span id="spEmail">请输入您的邮箱</span>
+    <input type="button" value="立即提交" id="btnEmail"/>
+</div>
+<script type="text/javascript">
+    String.prototype.myTrim = function () {
+        return this.replace(/(^\s*|\s*$)/g, "");
+    };
+    var inEmail = document.getElementById("inEmail"), spEmail = document.getElementById("spEmail"), btnEmail = document.getElementById("btnEmail");
+
+    inEmail.onfocus = function () {
+        var val = this.value.myTrim();
+        if (val === this.getAttribute("tip")) {
+            this.value = null;
+            this.className = "cus";
+        }
+    };
+    inEmail.onblur = function () {
+        var val = this.value.myTrim();
+        val = (val === this.getAttribute("tip")) ? "" : val;
+        if (val === "") {
+            this.value = this.getAttribute("tip");
+            this.className = null;
+            spEmail.innerHTML = "输入的内容不能为空！";
+            spEmail.className = "error";
+            return false;
+        }
+        var reg = /^(?:[a-zA-Z0-9_-]+)@(?:[a-zA-Z0-9]+)(\.[a-zA-Z]{2,4}){1,2}$/;
+        if (!reg.test(val)) {
+            spEmail.innerHTML = "请输入正确的邮箱！";
+            spEmail.className = "error";
+            return false;
+        }
+        spEmail.innerHTML = "输入正确！";
+        spEmail.className = "ok";
+        return true;
+    };
+
+    btnEmail.onclick = function () {
+        var flag = inEmail.onblur();
+        if (flag) {
+            var val = inEmail.value.myTrim();
+            alert("您输入的邮箱是:" + val + "，我们已经提交到后台！");
+        }
+    }
+</script>
+</body>
+</html>

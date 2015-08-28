@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/public.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/contract.css"/>
+</head>
+<body>
+<div class="top-bar">
+    <div class="container">
+        <div class="topbar-left">
+            <a href="javascript:void(0)">小米网</a><span>|</span>
+            <a href="javascript:void(0)">MIUI</a><span>|</span>
+            <a href="javascript:void(0)">米聊</a><span>|</span>
+            <a href="javascript:void(0)">游戏</a><span>|</span>
+            <a href="javascript:void(0)">多看阅读</a><span>|</span>
+            <a href="javascript:void(0)">云服务</a><span>|</span>
+            <a href="javascript:void(0)">小米网移动版</a><span>|</span>
+            <a href="javascript:void(0)">Select region</a>
+        </div>
+        <div class="topbar-right">
+            <a href="javascript:void(0)">登录</a><span>|</span>
+            <a href="javascript:void(0)">注册</a>
+        </div>
+    </div>
+</div>
+<div class="header-bar">
+    <div class="header-logo">
+        <a href="javascript:void(0)"></a>
+    </div>
+    <div class="header-right">
+        <form action="#" class="search-form">
+            <input type="text" class="search-input" id="searchInput" placeholder="搜索您需要的商品"/>
+            <input type="button" class="btn iconfont" value="&#xe623;" />
+            <div class="hot-words" id="hotWords">
+                <a href="javascript:void(0)">插线板</a>
+                <a href="javascript:void(0)">耳机</a>
+                <a href="javascript:void(0)">小米耳机</a>
+            </div>
+            <div class="keywordList" id="keyWordList">
+                <ul class="result-list">
+                    <li data-key="电池">
+                        <a href="http://search.mi.com/search_%E7%94%B5%E6%B1%A0">电池<span class="result">约有14件商品</span></a>
+                    </li>
+                    <li data-key="电源">
+                        <a href="http://search.mi.com/search_%E7%94%B5%E6%BA%90">电源<span class="result">约有29件商品</span></a>
+                    </li>
+                    <li data-key="电视">
+                        <a href="http://search.mi.com/search_%E7%94%B5%E8%A7%86">电视<span class="result">约有10件商品</span></a>
+                    </li>
+                    <li data-key="短袖">
+                        <a href="http://search.mi.com/search_%E7%9F%AD%E8%A2%96">短袖<span class="result">约有39件商品</span></a>
+                    </li>
+                    <li data-key="刀锋">
+                        <a href="http://search.mi.com/search_%E5%88%80%E9%94%8B">刀锋<span class="result">约有4件商品</span></a>
+                    </li>
+                    <li data-key="大人">
+                        <a href="http://search.mi.com/search_%E5%A4%A7%E4%BA%BA">大人<span class="result">约有7件商品</span></a>
+                    </li>
+                    <li data-key="单片">
+                        <a href="http://search.mi.com/search_%E5%8D%95%E7%89%87">单片<span class="result">约有6件商品</span></a>
+                    </li>
+                    <li data-key="电信版">
+                        <a href="http://search.mi.com/search_%E7%94%B5%E4%BF%A1%E7%89%88">电信版<span class="result">约有5件商品</span></a>
+                    </li>
+                    <li data-key="电路">
+                        <a href="http://search.mi.com/search_%E7%94%B5%E8%B7%AF">电路<span class="result">约有4件商品</span></a>
+                    </li>
+                    <li data-key="多功能">
+                        <a href="http://search.mi.com/search_%E5%A4%9A%E5%8A%9F%E8%83%BD">多功能<span class="result">约有4件商品</span></a>
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <div class="cart-section" id="cart">
+            <a href="">
+                <i class="iconfont">&#xe61b;</i>
+                <span>购物车</span>
+            </a>
+            <div class="car-list" id="cartList">
+                购物车中还没有商品，赶紧选购吧！
+            </div>
+        </div>
+
+    </div>
+    <div class="nav">
+        <div class="all">全部商品分类</div>
+        <div class="nav-list" id="navList">
+            <ul>
+                <li class="has-item">
+                    <a href="index.html">
+                        <span>首页</span>
+                        <!--<span class="arraw"></span>-->
+                    </a>
+
+                </li>
+                <li class="has-item has-child">
+                    <a href="javascript:void(0)">
+                        <span>小米手机</span>
+                        <span class="arraw" ></span>
+                    </a>
+                    <div class="detail" >
+                        <div class="detail-infor" >
+                            <ul class="two">
+                                <li>
+                                    <a href="javascript:void (0)">
+                                        <span class="tu">
+                                            <img src="images/goods/nav-phone-minote.jpg" alt=""/>
+                                        </span>
+                                        <span class="title ">小米Note</span>
+                                        <span class="describe">大屏旗舰，HiFi 双卡双待</span>
+                                        <span class="amount"><b>1999</b>元起</span>
+                                        <span class="describe">双网通16GB直降300</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void (0)">
+                                        <span class="tu">
+                                            <img src="images/goods/nav-phone-mi4.jpg" alt=""/>
+                                        </span>
+                                        <span class="title ">小米手机4</span>
+                                        <span class="describe">工艺和手感，超乎想象</span>
+                                        <span class="amount"><b>1499</b>元</span>
+                                        <span class="describe">旗舰特价直降200</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-item has-child">
+                    <a href="javascript:void(0)">
+                        <span>红米</span>
+                        <span class="arraw" ></span>
+                    </a>
+                    <div class="detail" >
+                        <div class="detail-infor" >
+                            <ul class="redMobile">
+                                <li>
+                                    <a href="">
+                                        <img src="images/goods/nav-phone-hongmi2a-more.jpg" alt=""/>
+                                        <p class="title">红米手机2A 4G版</p>
+                                        <p class="describe">4.7英寸屏 / 联芯四核 / 双卡双待</p>
+                                        <p class="price">无敌价：<b>499</b>元</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/goods/nav-phone-hongmi2a-more.jpg" alt=""/>
+                                        <p class="title">红米手机2A 4G版</p>
+                                        <p class="describe">4.7英寸屏 / 联芯四核 / 双卡双待</p>
+                                        <p class="price">无敌价：<b>499</b>元</p>
+                                    </a>
+                                </li>
+                                <li class="last">
+                                    <a href="">
+                                        <img src="images/goods/nav-phone-hongmi2a-more.jpg" alt=""/>
+                                        <p class="title">红米手机2A 4G版</p>
+                                        <p class="describe">4.7英寸屏 / 联芯四核 / 双卡双待</p>
+                                        <p class="price">无敌价：<b>499</b>元</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-item">
+                    <a href="javascript:void(0)">
+                        <span>小米平板</span>
+                        <!--<span class="arraw"></span>-->
+                    </a>
+                </li>
+                <li class="has-item has-child">
+                    <a href="javascript:void(0)">
+                        <span>小米电视</span>
+                        <span class="arraw" ></span>
+                    </a>
+                    <div class="detail"  >
+                        <div class="detail-infor" >
+                            <ul class="tv">
+                                <li>
+                                    <a href="">
+                                        <img src="images/goods/nav-phone-mitv40-four.jpg" alt=""/>
+                                        <p class="title">小米电视2 40英寸</p>
+                                        <p class="price"><b>499</b>元</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/goods/nav-phone-mitv48-four.jpg" alt=""/>
+                                        <p class="title">小米电视2S 48英寸</p>
+                                        <p class="price"><b>2999</b>元</p>
+                                    </a>
+                                </li>
+                                <li >
+                                    <a href="">
+                                        <img src="images/goods/nav-phone-mitv49-four.jpg" alt=""/>
+                                        <p class="title">小米电视2 49英寸</p>
+                                        <p class="price"><b>3399</b>元</p>
+                                    </a>
+                                </li>
+                                <li class="last">
+                                    <a href="">
+                                        <img src="images/goods/nav-phone-mitv55-four.jpg" alt=""/>
+                                        <p class="title">小米电视2 55英寸</p>
+                                        <p class="price"><b>4999</b>元</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-item has-child">
+                    <a href="javascript:void(0)">
+                        <span>盒子</span>
+                        <span class="arraw"></span>
+                    </a>
+                    <div class="detail">
+                        <div class="detail-infor" >
+                            <ul class="two">
+                                <li>
+                                    <a href="javascript:void (0)">
+                                        <span class="tu">
+                                            <img src="images/goods/nav-phone-hezimini.jpg" alt=""/>
+                                        </span>
+                                        <span class="title ">小米盒子mini版</span>
+                                        <span class="describe">全球最小全高清网络机顶盒</span>
+                                        <span class="amount"><b>199</b>元起</span>
+                                        <!--<span class="describe">双网通16GB直降300</span>-->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void (0)">
+                                        <span class="tu">
+                                            <img src="images/goods/nav-hezis.jpg" alt=""/>
+                                        </span>
+                                        <span class="title ">小米盒子 增强版</span>
+                                        <span class="describe">首款4K超高清网络机顶盒</span>
+                                        <span class="amount"><b>299</b>元</span>
+                                        <!--<span class="describe">旗舰特价直降200</span>-->
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-item has-child">
+                    <a href="javascript:void(0)">
+                        <span>路由器</span>
+                        <span class="arraw"></span>
+                    </a>
+                    <div class="detail">
+                        <div class="detail-infor" >
+                            <ul class="two">
+                                <li>
+                                    <a href="javascript:void (0)">
+                                        <span class="tu">
+                                            <img src="images/goods/nav-miwifi-router.jpg" alt=""/>
+                                        </span>
+                                        <span class="title ">全新小米路由器</span>
+                                        <span class="describe">顶配企业级性能<br />最高内置6TB监控级硬盘</span>
+                                        <span class="amount price"><b>699</b>元起</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void (0)">
+                                        <span class="tu">
+                                            <img src="images/goods/T1XsATBCLT1RXrhCrK!160x160.jpg" alt=""/>
+                                        </span>
+                                        <span class="title ">小米路由器 mini</span>
+                                        <span class="describe">主流双频AC智能路由器<br/>性价比之王</span>
+                                        <span class="amount price"><b>129</b>元</span>
+                                        <!--<span class="describe">旗舰特价直降200</span>-->
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="has-item">
+                    <a href="javascript:void(0)" >
+                        <span>合约机</span>
+                    </a>
+                </li>
+                <li class="has-item">
+                    <a href="javascript:void(0)">
+                        <span>服务</span>
+                    </a>
+                </li>
+                <li class="has-item">
+                    <a href="javascript:void(0)">
+                        <span>社区</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="contentAll">
+    <div id="contentAllCenter">
+        <div id="contentAllCenterTop">
+            <div id="contentAllCenterTopLeft"><div id="topLeftInnerLeft"></div><div id="topLeftInner"><div class="topLeft1"></div><div class="topLeft2"></div></div><div id="topLeftInnerRight"></div></div>
+            <div id="contentAllCenterTopRight">
+                <h3>话费充值</h3>
+                <input type="text" value="请输入手机号码" id="topRightInput1" class="topRightInput" maxlength="11" trueValue="请输入手机号码"/>
+                <span>请输入手机号！</span>
+                <div id="topRightDiv">
+                    <p class="triangle"></p>
+                    <input type="text" value="充值100元" id="topRightInput2" class="topRightInput c" forever="充值100元"/>
+                    <ul id="phone"><li>充值50元</li><li>充值30元</li></ul>
+                </div>
+                <div id="price">实时价格：<span>98.4</span>元起</div>
+                <div id="btn">立即充值</div>
+            </div>
+        </div>
+        <div id="contentAllCenterBottom">
+            <div id="contentTab">
+            <ul id="contentTabUl">
+                <li class="li1 liSelected"><img src="images/2.png" alt="全部合约机"/><span>全部合约机</span></li><li class="li1"><img src="images/3.png" alt=""/><span>移动合约机</span></li><li class="li1"><img src="images/4.png" alt=""/><span>联通合约机</span></li><li class="li4"><img src="images/5.png" alt=""/><span>电信合约机</span></li>
+            </ul>
+            <div id="contentTab0" class="selected">
+                <ul>
+                    <li><img src="images/11.jpg" alt=""/><span class="contentTabRed">联通</span><p>小米note合约机2119元起</p></li>
+                    <li id="contentTabLi"><img src="images/12.jpg" alt=""/><span class="contentTabBlue">移动</span><span class="contentTabSpan">已售罄</span><p>小米note顶配版合约机2999元</p></li>
+                    <li><img src="images/13.jpg" alt=""/><span class="contentTabBlue">移动</span><p>小米note合约机1999元</p></li>
+                    <li><img src="images/14.jpg" alt=""/><span class="contentTabRed">联通</span><p>红米2合约机719元起</p></li>
+                    <li><img src="images/15.jpg" alt=""/><span class="contentTabBlue">移动</span><p>红米2A合约机499元起</p></li>
+                    <li><img src="images/16.jpg" alt=""/><span class="contentTabBlue1">电信</span><p>红米2合约机699元起</p></li>
+                    <li><img src="images/17.jpg" alt=""/><span class="contentTabBlue1">电信</span><p>小米4电信4G合约机1599元</p></li>
+                    <li><img src="images/18.jpg" alt=""/><span class="contentTabBlue1">电信</span><p>红米note 4G合约机799元</p></li>
+                </ul></div>
+            <div id="contentTab1">
+                <ul>
+                    <li id="contentTabLi1"><img src="images/12.jpg" alt=""/><span class="contentTabBlue">移动</span><span class="contentTabSpan">已售罄</span><p>小米note顶配版合约机2999元</p></li>
+                    <li><img src="images/13.jpg" alt=""/><span class="contentTabBlue">移动</span><p>小米note合约机1999元</p></li>
+                    <li><img src="images/15.jpg" alt=""/><span class="contentTabBlue">移动</span><p>红米2A合约机499元起</p></li>
+                </ul>
+            </div>
+            <div id="contentTab2">
+                <ul>
+                    <li><img src="images/11.jpg" alt=""/><span class="contentTabRed">联通</span><p>小米note合约机2119元起</p></li>
+                    <li><img src="images/14.jpg" alt=""/><span class="contentTabRed">联通</span><p>红米2合约机719元起</p></li>
+                </ul>
+            </div>
+            <div id="contentTab3">
+                <ul>
+                    <li><img src="images/16.jpg" alt=""/><span class="contentTabBlue1">电信</span><p>红米2合约机699元起</p></li>
+                    <li><img src="images/17.jpg" alt=""/><span class="contentTabBlue1">电信</span><p>小米4电信4G合约机1599元</p></li>
+                    <li><img src="images/18.jpg" alt=""/><span class="contentTabBlue1">电信</span><p>红米note 4G合约机799元</p></li>
+                </ul>
+            </div>
+        </div>
+            <div class="centerBottomRight">
+                <div class="centerBottomRightDiv"><h3>联通授权标识</h3><img src="images/21.jpg" alt=""/></div>
+                <div class="centerBottomRightDiv"><h3>电信授权标识</h3><img src="images/22.jpg" alt=""/></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="js/dom.js"></script>
+<script type="text/javascript" src="js/buffer.js"></script>
+<script type="text/javascript" src="js/contract.js"></script>
+<script src="js/index.js"></script>
+</html>

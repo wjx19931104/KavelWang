@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新旧图片对比</title>
+    <style>
+        body,div,img,p,a{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 950px;
+            height: 622px;
+        }
+        #compare{
+            position: relative;
+            width: 950px;
+            height: 622px;
+            margin: 10px auto;
+            overflow: hidden;
+        }
+        #compare .old{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 950px;
+            height: 622px;
+            z-index: 0;
+        }
+        #compare .mid{
+            position: absolute;
+            top: 0;
+            width: 4px;
+            height: 622px;
+            background: white;
+            z-index: 5;
+        }
+        #compare .mid img{
+            position: absolute;
+            left: 50%;
+            margin-left: -76px;
+            width: 152px;
+            height: 86px;
+        }
+        #compare .new{
+            position: absolute;
+            top: 0;
+            width: 950px;
+            height: 622px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+<p>本案例的原链接<a href="http://news.china.com.cn/2015-08/06/content_36231850.htm?source=bdxsy" target="_blank">http://news.china.com.cn/2015-08/06/content_36231850.htm?source=bdxsy</a></p>
+<div id="compare">
+    <div class="old"><img src="img/old.jpg"/></div>
+    <div class="mid" style="left: 300px;"><img style="top: 100px;" src="img/mid.gif"/></div>
+    <div class="new" style="left: -644px;"><img src="img/new.jpg"/></div>
+</div>
+<script>
+    var oCompare = document.getElementById("compare");
+    var oMid = oCompare.getElementsByClassName("mid")[0];
+    var oMidImg = oMid.getElementsByTagName("img")[0];
+    var oNew = oCompare.getElementsByClassName("new")[0];
+
+    var oLeft = oCompare.offsetLeft, oTop = oCompare.offsetTop;
+    oCompare.addEventListener("mousemove", function (e) {
+        var left = e.pageX - oLeft, top = e.pageY - oTop;
+        oNew.style.left = left - 2 - oNew.clientWidth + "px";
+        oMid.style.left = left - 2 + "px";
+        oMidImg.style.top = top - oMidImg.clientHeight/2 + "px";
+    }, false);
+</script>
+</body>
+</html>

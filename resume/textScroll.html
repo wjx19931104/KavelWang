@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字无缝滚动</title>
+    <style>
+        body, div, p {
+            margin: 0;
+            padding: 0;
+            font: 14px "微软雅黑";
+            -webkit-user-select: none;
+        }
+
+        #tip {
+            margin: 10px auto 0;
+            padding: 0 5px 0 40px;
+            width: 915px;
+            height: 31px;
+            line-height: 31px;
+            border: 1px dashed #c0c0c0;
+            background: url("images/gg.gif") no-repeat;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #tip p {
+            width: 915px;
+            height: 31px;
+            line-height: 31px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #vtip {
+            margin: 10px auto;
+            width: 100px;
+            height: 200px;
+            text-align: center;
+            border: 1px dashed #c0c0c0;
+            background: #CDE074;
+            overflow: hidden;
+        }
+
+        #vtip p {
+            width: 100px;
+            height: 200px;
+            text-align: left;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="tip">
+    <p>
+        新版经理人论坛上线了：亲爱的用户，为了更好的提供服务，神州英才推出了全新经理人论坛平台。从即日起面向网站所有的会员朋友们开放公测！上线的社区平台，有全新的读版、读帖页样式，增添了更多的交互功能，关注用户需求和使用感受。</p>
+</div>
+<div id="vtip"><p>
+    新版经理人论坛上线了：亲爱的用户，为了更好的提供服务，神州英才推出了全新经理人论坛平台。从即日起面向网站所有的会员朋友们开放公测！上线的社区平台，有全新的读版、读帖页样式，增添了更多的交互功能，关注用户需求和使用感受。<br/></p>
+</div>
+<script>
+    var oDiv = document.getElementById("tip");
+    var oTip = oDiv.getElementsByTagName("p")[0];
+    oTip.innerHTML += oTip.innerHTML;
+    var reset = oTip.scrollWidth / 2;
+    var timer = window.setInterval(function () {
+        oTip.scrollLeft++;
+        var oTipL = oTip.scrollLeft;
+        if (reset == oTipL) {
+            oTip.scrollLeft = 0;
+        }
+    }, 15);
+
+
+    var oVtip = document.getElementById("vtip").getElementsByTagName("p")[0];
+    oVtip.innerHTML += oVtip.innerHTML;
+    var vreset = oVtip.scrollHeight / 2;
+    var vTimer = window.setInterval(function () {
+        oVtip.scrollTop++;
+        var oVtipT = oVtip.scrollTop;
+        if (vreset==oVtipT){
+            oVtip.scrollTop = 0;
+        }
+    }, 25);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+body, div, img, a, ul, li, span, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+}
+
+#kavel {
+    margin: 0px auto;
+    font: 14px "微软雅黑";
+    width: 1240px;
+    height: 592px;
+    background: #dfdfdf;
+    position: relative;
+}
+
+#kavel .kavel-banner {
+    width: 250px;
+    height: 591px;
+    float: left;
+}
+
+#kavel .kavel-banner .banner-item {
+    margin-left: 1px;
+    margin-bottom: 1px;
+    padding: 16px 0 16px 20px;
+    background: #ffffff;
+}
+
+#kavel .kavel-banner .banner-item:hover {
+    border-left: 3px solid red;
+    margin-left: 0;
+    padding-left: 18px;
+    background: #fafafa;
+}
+
+#kavel .kavel-banner #last {
+    margin-bottom: 0;
+}
+
+#kavel .kavel-banner .banner-item .banner-title {
+    color: red;
+}
+
+#kavel .kavel-banner .banner-item .links {
+    padding-top: 3px;
+}
+
+#kavel .kavel-banner .banner-item .links a {
+    padding-right: 5px;
+    color: #6d6d6d;
+
+}
+
+#kavel .kavel-banner .banner-item .details {
+    background: #FFFFFF;
+    border: 1px solid #dfdfdf;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    z-index: 1;
+    display: none;
+}
+
+#kavel .kavel-banner .banner-item .details .children-list {
+    margin: 10px 0;
+}
+
+#kavel .kavel-banner .banner-item .details .children-list li {
+    position: relative;
+    width: 247px;
+    height: 61px;
+    line-height: 61px;
+}
+
+#kavel .kavel-banner .banner-item .details .children-list li:hover {
+    background: #f3f3f3;
+}
+
+#kavel .kavel-banner .banner-item .details .children-list li img {
+    margin: 11px 20px 0 30px;
+    float: left;
+}
+
+#kavel .kavel-banner .banner-item .details .children-special-section {
+    background: #fafafa;
+}
+
+#kavel .kavel-banner .banner-item .details .children-special-section h4 {
+    padding: 20px 0 0 30px;
+    font-weight: normal;
+}
+
+#kavel .kavel-banner .banner-item .details .children-special-section ul {
+    padding: 5px 0 20px 50px;
+    font-size: 10px;
+
+}
+
+#kavel .kavel-banner .banner-item .details .children-special-section li {
+    list-style: disc;
+    padding-top: 3px;
+    color: #6d6d6d;
+}
+
+#kavel .kavel-banner .banner-item .details .children-special-section li a {
+    color: #6d6d6d;
+}
+
+#kavel .kavel-slider {
+    position: relative;
+    margin-right: 0px;
+    width: 990px;
+    height: 420px;
+    background: white;
+    float: right;
+    overflow: hidden;
+}
+
+#kavel .kavel-slider .kavel-slider-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 990px;
+    height: 420px;
+    overflow: hidden;
+}
+
+#kavel .kavel-slider .slider-style {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 990px;
+    height: 420px;
+    border: none;
+    display: none;
+    overflow: hidden;
+}
+
+#kavel .kavel-slider .icon-slides {
+    width: 41px;
+    height: 69px;
+    background-image: url("../images/kavel-icon-slides.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#kavel .kavel-slider .icon-slides:hover {
+    opacity: 0.6;
+}
+
+#kavel .kavel-slider .kavel-slider-prev {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    background-position: -84px center
+}
+
+#kavel .kavel-slider .kavel-slider-prev:hover {
+    background-position: 0 center
+}
+
+#kavel .kavel-slider .kavel-slider-next {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    background-position: -125px center
+}
+
+#kavel .kavel-slider .kavel-slider-next:hover {
+    background-position: -42px center
+}
+
+#kavel .kavel-slider .kavel-slider-pagination {
+    position: absolute;
+    top: 92%;
+    right: 2%;
+}
+
+#kavel .kavel-slider .kavel-slider-pagination li {
+    margin-left: 10px;
+    width: 28px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    border: 1px solid #b2b2b2;
+    background: #525252;
+    float: left;
+    cursor: pointer;
+    opacity: 0.3;
+    -webkit-user-select: none;
+}
+
+#kavel .kavel-slider .kavel-slider-pagination li.selected {
+    background: black;
+    opacity: 0.7;
+}
+
+#kavel .kavel-show {
+    margin-top: 1px;
+    margin-right: 0px;
+    width: 990px;
+    height: 170px;
+    float: right;
+}
+
+#kavel .kavel-show img {
+    background: white;
+    border: none;
+    width: 329px;
+    height: 170px;
+}
+
+#kavel .kavel-show a {
+    float: left;
+    margin-right: 1px;
+}
+
+#kavel .kavel-show .a-last {
+    margin-right: 0;
+}

@@ -1,0 +1,112 @@
+body, div, ul, li, a, img, h2 {
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#carousel {
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    height: 505px;
+}
+
+#carousel > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#carousel .img_cur {
+    z-index: 1;
+}
+#carousel .cover{
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    width: 1070px;
+    height: 64px;
+    background: #000;
+    opacity: 0.5;
+    z-index: 4;}
+#carousel .focus_control {
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    width: 1070px;
+    height: 64px;
+    /*background: #000;
+    opacity: 0.5;*/
+    z-index: 5;
+}
+
+#carousel .focus_control .focus_title {
+    margin: 7px 20px;
+    width: 257px;
+    height: 50px;
+    line-height: 25px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "微软雅黑";
+    color: white;
+    float: left;
+}
+
+#carousel .focus_control .focus_thumbnails_inner {
+    float: left;
+}
+
+#carousel .focus_control .focus_thumbnails_inner ul li {
+    margin: 7px 0 7px 10px;
+    width: 85px;
+    height: 50px;
+    float: left;
+}
+
+#carousel .focus_control .focus_thumbnails_inner li.current {
+    border: 3px solid orange;
+    width: 79px;
+    height: 44px;
+}
+
+#carousel .focus_control .focus_thumbnails_inner li a img {
+    width: 85px;
+    height: 50px;
+}
+
+#carousel .focus_control .focus_thumbnails_inner li.current a img {
+    width: 79px;
+    height: 44px;
+}
+
+#carousel .focus_control .btn_prev {
+    margin: 0 10px;
+    width: 34px;
+    height: 64px;
+    float: left;
+    background: url("../img/icon.png") no-repeat;
+    background-position: -4px center;
+
+}
+
+#carousel .focus_control .btn_next {
+    margin: 0 10px;
+    width: 34px;
+    height: 64px;
+    float: right;
+    background: url("../img/icon.png") no-repeat;
+    background-position: -46px center;
+}

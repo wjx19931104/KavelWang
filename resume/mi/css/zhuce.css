@@ -1,0 +1,249 @@
+body,div,p,span,a,input, ul,li{
+    margin:0;
+    padding:0;
+    font-size:14px;
+    font-family:"微软雅黑";
+
+}
+ul,li{
+    list-style:none;
+}
+input{
+    border:none;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+.main{
+    width:100%;
+    background-color:#f9f9f9;
+}
+.sMain{
+    margin:0 auto;
+    width:962px;
+}
+.header{
+    height:132px;
+}
+.header img{
+    margin-top:49px;
+    cursor:pointer;
+}
+.content{
+    width:962px;
+    height:470px;
+    background-color:white;
+    border:1px solid #e6e6e6;
+    border-radius:10px;
+}
+.content .zcxmzh{
+
+}
+.content .zcxmzh .zcxmzh1{
+    height:100px;
+    width:890px;
+    margin:0 36px;
+    border-bottom:1px solid #e6e6e6;
+    line-height:100px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    color:#333333;
+}
+.content .quhao{
+    margin:30px auto 0;
+    width:330px;
+    height:42px;
+    border:1px solid #e6e6e6;
+    border-radius:5px;
+    cursor:pointer;
+}
+.content .quhao .quhaoL{
+    float:left;
+    width:279px;
+    height:42px;
+    padding-left:10px;
+    text-align:left;
+    line-height:42px;
+}
+.content .quhao .quhaoR{
+    float:right;
+    width:40px;
+    height:42px;
+    border-left:1px solid  #e6e6e6;
+    background:url("../images/iconfont-unfold.png") no-repeat center center;
+    background-size:100%;
+}
+
+.content .xuanxiang{
+    position:absolute;
+    display:none;
+    margin-left:315px;
+    width:330px;
+    height:170px;
+    border:1px solid #e6e6e6;
+    border-top:none;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    cursor:pointer;
+    background-color:white;
+}
+.content .xuanxiang li{
+    padding:0 10px 0 10px;
+    width:300px;
+    height:32px;
+    line-height:32px;
+
+}
+.content .xuanxiang li span.left{
+    float:left;
+}
+.content .xuanxiang li span.right{
+    float:right;
+}
+.content .xuanxiang .changyong{
+    background-color:#e6e6e6
+}
+.content .tel{
+    margin:15px auto 0;
+    width:320px;
+    height:42px;
+    border:1px solid #e6e6e6;
+    border-radius:5px;
+    line-height:42px;
+    padding-left:10px;
+}
+.content .tel input{
+    margin:0 auto 0;
+    width:320px;
+    height:20px;
+    line-height:20px;
+    border:0 solid white;
+    outline:none;
+
+}
+.content .telErr{
+    position:relative;
+    display:none;
+    margin:10px 0 0 315px;
+    width:320px;
+    height:14px;
+    line-height:14px;
+    padding-left:10px;
+    color:#ff6f3d;
+}
+
+.content .yz{
+    margin:15px auto 0;
+    width:332px;
+    height:42px;
+    line-height:42px;
+}
+.content .yz .yzm{
+    float:left;
+    width:180px;
+    border-radius:5px;
+    height:100%;
+    border:1px solid #e6e6e6;
+    padding-left:10px;
+}
+.content .yz .yzm input{
+    float:left;
+    width:170px;
+    height:100%;
+    border:none;
+    outline:none;
+}
+.content .yz .yztp {
+    float: right;
+    width: 130px;
+    height:42px;
+    border:1px solid #e6e6e6;
+    text-align:center;
+    line-height:42px;
+    font-size:24px;
+    cursor:pointer;
+}
+.content .zhuce{
+    height:40px;
+    line-height:40px;
+}
+.content .zhuce .ljzc{
+    margin:20px 0  0 314px;
+    padding-left:10px;
+    width:330px;
+    height:40px;
+    line-height:40px;
+    border-radius:5px;
+    text-align:center;
+    background-color:#ff6f3d;
+    font-size:14px;
+    color:#ffffff;
+    cursor:pointer;
+}
+.content .zhuce .ljzc:hover{
+    opacity:0.6;
+    filter:alpha(opacity=60);
+}
+.content p{
+    margin:40px 0  0 290px;
+    width:380px;
+    height:40px;
+    line-height:20px;
+    border-radius:5px;
+    font-size:10px;
+    color:#9d9d9d;
+
+}
+.content p a{
+    font-weight:bold;
+    font-size:12px;
+    cursor:pointer;
+}
+.footer{
+
+    width:962px;
+    height:155px;
+    background-color:#f9f9f9;
+    border-radius:10px;
+}
+.footer .cjwt{
+    display:inline-block;
+    margin-top:20px;
+    width:100%;
+    height:33px;
+    line-height:33px;
+    text-align:center;
+}
+.footer .cjwt a{
+    cursor:pointer;
+    color:#a99d9d;
+}
+.footer .cjwt a:hover{
+    color:orangered;
+}
+.footer .banquan{
+    width:100%;
+    height:33px;
+    line-height:33px;
+    text-align:center;
+    color:#a99d9d;
+}
+.footer .language{
+    width:100%;
+    height:33px;
+    line-height:33px;
+    text-align:center;
+}
+.footer .language span{
+    margin-left:5px;
+    cursor:pointer;
+    color:#a99d9d;
+}
+.footer .language span.jianti{
+    color:black;
+}
+.footer .language span:hover{
+    color:black;
+}

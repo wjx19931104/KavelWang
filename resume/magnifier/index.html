@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>放大镜</title>
+    <style>
+        body, div {
+            margin: 0;
+            padding: 0;
+        }
+
+        #con {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+            background: url("img/bg.jpg") no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="con">
+
+</div>
+<script src="js/magnifier.js"></script>
+<script>
+    var oCon = document.getElementById("con");
+    magnifier(oCon,"img/bg.jpg",900,900,{width: 150, height: 150})
+</script>
+</body>
+</html>

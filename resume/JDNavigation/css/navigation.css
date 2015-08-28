@@ -1,0 +1,115 @@
+body, div, ul, li, span, h1, h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #000;
+    -webkit-user-select: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.con {
+    margin: 10px auto;
+    width: 1220px;
+}
+
+.con .nav {
+    float: left;
+    width: 210px;
+}
+
+.con .conR {
+    float: right;
+    width: 1000px;
+    height: 650px;
+    border: 1px solid #EE5757;
+}
+
+.con .nav h1 {
+    padding-left: 8px;
+    height: 35px;
+    line-height: 35px;
+    background: #B1191A;
+    color: #fff;
+    font-size: 15px;
+}
+
+.con .nav .one {
+
+}
+
+.con .nav .one h2 {
+    position: relative;
+    padding-left: 36px;
+    height: 30px;
+    line-height: 30px;
+    background: #F7F7F7;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.con .nav .one h2.first {
+    border-top: none;
+}
+
+.con .nav .one h2 .downOrUp {
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/na-icon.png") no-repeat -59px -28px;
+}
+
+.con .nav .one h2 .downOrUp.m {
+    background-position: -42px -28px;
+}
+
+.con .nav .one ul {
+    display: none;
+    padding-left: 36px;
+    border-top: 1px solid #ddd;
+    height: 0;
+    overflow: hidden;
+}
+
+.con .nav .one ul li {
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.con .nav .one ul li.red {
+    color: red;
+}
+
+.con .nav .one .more {
+    display: none;
+    position: relative;
+    margin: 0 0 8px 34px;
+    padding-right: 2px;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.con .nav .one .more .moreEm {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    width: 7px;
+    height: 5px;
+    background: url("http://misc.360buyimg.com/201007/skin/df/i/2013100702.gif") no-repeat;
+}
+
+
+
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>图片延时加载&回到顶部</title>
+    <style>
+        body, div, img {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            margin: 10px auto;
+            width: 400px;
+            border: 1px dashed #00b3ee;
+        }
+
+        #box div {
+            margin: 10px auto;
+            width: 300px;
+            height: 150px;
+            background: url("images/ddd.jpg") no-repeat;
+        }
+
+        #box div img {
+            width: 300px;
+            height: 150px;
+            border: none;
+            opacity: 0;
+        }
+        #goTop{
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: #FFE0E9;
+            border: solid 1px #00b3ee;
+            position: fixed;
+            right: 5px;
+            bottom: 20px;
+            cursor: pointer;
+            border-radius: 50px;
+            -webkit-user-select: none;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<div id="goTop">GO TOP</div>
+</body>
+<script src="js/utils.js"></script>
+<script>
+    var oBox = document.getElementById("box");
+    var oDivs = oBox.getElementsByTagName("div");
+
+    data = [];
+    for(var i = 0; i< 100; i++){
+        data.push("images/" + (i % 10 + 1) + ".jpg");
+    }
+
+    var frg = document.createDocumentFragment();
+    for(var i = 0; i < data.length; i++){
+        var oDiv = document.createElement("div");
+        oDiv.trueImages = data[i];
+        frg.appendChild(oDiv);
+    }
+    oBox.appendChild(frg);
+
+    function initImages(){
+        for(var i = 0; i< oDivs.length; i++){
+            ~function (i) {
+                var cur = oDivs[i];
+                if(!cur.isLoaded){
+                    var curT = utils.offset(cur).top + cur.offsetHeight;
+                    var navT = utils.getWin("scrollTop") + utils.getWin("clientHeight");
+                    if(navT>=curT){
+                        var img = new Image;
+                        img.src = cur.trueImages;
+                        img.onload = function () {
+                            cur.appendChild(this);
+                            cur.isLoaded = true;
+                            move(this);
+                        }
+                    }
+                }
+            }(i);
+        }
+    }
+
+    function move(img){
+        img.style.opacity = 0;
+        var timer = window.setInterval(function () {
+            if(img.style.opacity >= 1){
+                window.clearInterval(timer);
+                return
+            }
+            img.style.opacity = parseFloat(img.style.opacity) + 0.05;
+        },10)
+    }
+    window.setTimeout(initImages, 500);
+
+    var oGoTop = document.getElementById("goTop");
+    var navTop = utils.getWin("clientHeight");
+    function scrollBar(){
+        initImages();
+        var scT = utils.getWin("scrollTop");
+        if(scT > navTop){
+            oGoTop.style.display = "block";
+        }else{
+            oGoTop.style.display = "none";
+        }
+    }
+    window.onscroll = scrollBar;
+
+    function goTopMove(ele, pro, target, time) {
+        var interval = 20;
+        var useTime = 0;
+        var next = 0;
+        var timer = null;
+
+        _move();
+        function _move() {
+            window.clearTimeout(timer);
+            timer = null;
+
+            if(document.body.scrollTop == 0 || useTime + interval >= time){
+                window.onscroll = scrollBar;
+                ele[pro] = target;
+                return;
+            }
+
+            cur = ele[pro];
+            useTime += interval;
+            next = useTime / time * (target - cur) + cur;
+
+            ele[pro] = next;
+            timer = window.setTimeout(_move, interval);
+        }
+    }
+
+    oGoTop.onclick = function () {
+        window.onscroll = null;
+        this.style.display = "none";
+        goTopMove(document.body,"scrollTop",0,2000);
+        /*var timer = window.setInterval(function () {
+            if(document.body.scrollTop == 0){
+                window.onscroll = scrollBar;
+                window.clearInterval(timer);
+                return
+            }
+            document.body.scrollTop -= 100;
+        },50)*/
+    }
+</script>
+</html>

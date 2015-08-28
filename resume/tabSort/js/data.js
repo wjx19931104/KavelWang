@@ -1,0 +1,1 @@
+var jsonStr = '[{"name":"张三","age":20,"score":90},{"name":"李四","age":21,"score":86},{"name":"王五","age":25,"score":80},{"name":"赵六","age":24,"score":78},{"name":"王小二","age":18,"score":99},{"name":"张献忠","age":16,"score":100},{"name":"李存勋","age":17,"score":96},{"name":"刘堪","age":18,"score":70},{"name":"夏候琳","age":24,"score":92},{"name":"陆抗","age":23,"score":98}]';
