@@ -1,0 +1,141 @@
+
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+table {
+    border-spacing: 0;
+}
+li {
+    list-style-type: none;
+}
+fieldset, img {
+    border: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+address, caption, cite, code, dfn, em, var {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+html{
+
+    background: #f4f4f4;
+    overflow-x: hidden;
+}
+@media screen and (max-width: 359px) {
+    html {
+        font-size: 12px;
+
+    }
+
+}
+@media screen and (min-width: 360px) and (max-width: 374px) {
+    html {
+        font-size: 13px;
+    }
+
+}
+@media screen and (min-width: 375px) and (max-width: 413px) {
+    html {
+        font-size: 14px;
+    }
+
+}
+@media screen and (min-width: 414px) and (max-width: 479px) {
+    html {
+        font-size: 16px;
+    }
+
+
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+    html {
+        font-size: 18.75px;
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width:735px) {
+    html{
+        font-size:25px; ;
+    }
+
+}
+@media screen and (min-width: 736px) and (max-width:799px) {
+    html{
+        font-size:28.75px; ;
+    }
+
+}
+@media screen and (min-width: 800px) and (max-width:979px) {
+    html{
+        font-size:31.25px ;
+    }
+
+}
+@media screen and (min-width: 980px){
+    html{
+        font-size:35px ;
+    }
+}
+
+
+.banner{
+    width: 100%;
+    text-align: center;
+    background: url(images/banner_bg.png) repeat-x;
+    background-size:100% 28rem ;
+}
+
+.banner img{
+    width: 27rem;
+}
+
+.package{
+    padding:  2.6rem 0 1.9rem 0;
+    position: relative;
+}
+.package  span{text-align: center}
+.package span img{ height: 4.074rem;}
+.price{
+    position: absolute;
+    left: 15%;
+    top: 2.6rem;
+}
+.flow{
+    position: absolute;
+    right: 15%;
+    top: 2.6rem;
+}
+.language{
+    width: 100%;
+    text-align: center;
+    display:block;
+}
+
+.receivePackage{
+    width:80%;
+    height:3.7rem;
+    line-height: 3.7rem;
+    background: #e7453d;
+    color: #fff;
+    margin: 0 auto 1.9rem;
+    text-align: center;
+    font-size: 1.5rem;
+    display: block;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    -webkit-border-radius:0.3rem
+
+}
